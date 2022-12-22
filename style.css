@@ -25,15 +25,18 @@ body {
 .header img {
     align-self: center;
     border-radius: 7%;
-    border: 10px;
-    border-color: #E5E7EB;
+    border: 1px;
+    border-style: solid;
+    border-color: #f9faf8;
+    max-width: 150px;
+    max-height: auto;
 }
 
 .header-links {
     display: flex;
     justify-content: space-between;
     align-self: center;
-    gap: 15px;
+    gap: 20px;
     padding: 15px;
     border: 0;
     margin: 0;
@@ -48,6 +51,7 @@ body {
 .section-one {
     display: flex;
     justify-content: center;
+    gap: 10px;
     background-color: #1F2937;
     padding: 35px 225px;
     border: 0;
@@ -57,40 +61,50 @@ body {
 .main-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    flex: 1 1 0;
     gap: 10px;
     padding: 0;
     border: 0;
     margin: 0;
 }
 
+.section-one img {
+    flex: 1 1 0;
+    border-radius: 3%;
+    max-width: 400px;
+    max-height: 200px;
+}
+
 .main-title {
-    font-size: 48px;
+    font-size: 46px;
     font-weight: 800;
     color: #f9faf8;
 }
 
 .main-text {
     color: #E5E7EB;
-    font-size: 18px;
+    font-size: 17px;
 }
+
 
 button {
     background-color: #3882F6;
     color: #E5E7EB;
+    font-size: 17px;
     font-weight: 700;
-    border-radius: 12%;
+    border-radius: 10px;
     max-width: 105px;
     min-height: 35px;
     border: 5px;
-    border-color: #E5E7EB;
+    /*border-color: #E5E7EB;*/
 }
 
 .section-two {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0;
+    padding: 75px;
     border: 0;
     margin: 0;
 }
@@ -99,6 +113,7 @@ button {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
+    align-self: center;
 }
 
 .cards {
@@ -108,17 +123,28 @@ button {
     border: 0;
     margin: 0;
     gap: 30px;
+    padding: 50px 10px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 230px;
+    gap: 8px;
     padding: 0;
     border: 0;
     margin: 0;
-    max-width: 300px;
-    height: auto;
+}
+
+.card img {
+    max-width: 230px;
+    min-height: 350px;
+    border-radius: 5%;
+}
+
+.card-text {
+    flex: 5 5 0;
 }
 
 .section-three {
@@ -130,15 +156,24 @@ button {
     font-style: italic;
     font-weight: 300;
     color: #1F2937;
-    padding: 0;
+    padding: 140px 180px;
     border: 0;
     margin: 0;
 }
 
+.quote-author {
+    font-weight: 800;
+    align-self: flex-end;
+}
+
 .section-four {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
     background-color: #3882F6;
-    padding: 0;
+    padding: 40px;
+    border-radius: 12px;
     border: 0;
     margin: 50px;
 }
@@ -146,16 +181,25 @@ button {
 .text-section-four {
     display: flex;
     flex-direction: column;
+    color: #E5E7EB;
     padding: 0;
     border: 0;
     margin: 0;
+}
+
+.section-four button {
+    align-self: center;
+    border: 2px;
+    border-style: solid;
+    border-color: #E5E7EB;
+    flex: 1;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 30px;
     border: 0;
     margin: 0;
 }
